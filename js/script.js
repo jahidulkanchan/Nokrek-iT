@@ -1,24 +1,23 @@
-
-
 // Top-scroller
-let topScroller = document.getElementById('top-scroller');
-topScroller.addEventListener('click', function(){
+let topScroller = document.getElementById("top-scroller");
+topScroller.addEventListener("click", () => {
   window.scrollTo(0, 0);
-})
+});
 
 // Scroll-bar
 let headerNav = document.getElementById("main-header");
 
-let prevPos = window.scrollY;
+let prevPosition = window.scrollY;
 window.addEventListener("scroll", () => {
   headerNav.classList.toggle("active", window.scrollY > 45);
-  let newPos = window.scrollY;
-  if (newPos > prevPos) {
+  let newPosition = window.scrollY;
+  if (newPosition > prevPosition) {
     headerNav.classList.add("hide");
-  } else {
+  } 
+  else {
     headerNav.classList.remove("hide");
   }
-  prevPos = newPos;
+  prevPosition = newPosition;
 });
 
 // Toogle-bar
@@ -29,23 +28,22 @@ toogleBar.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-
 // Owl carousel
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  dots:false,
-  nav:true,
-  autoplay:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
-  }
-})
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: false,
+  nav: true,
+  autoplay: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
