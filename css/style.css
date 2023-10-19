@@ -94,7 +94,17 @@ section h1{
   body .Course-section .card{
     margin: 10px 20px;
   }
-
+}
+@media (max-width:576px) {
+  body .contact-info{
+    display: none;
+  }
+  body .owl-carousel .owl-nav .owl-prev{
+    left: -15px;
+  }
+  body .owl-carousel .owl-nav .owl-next{
+    right: -15px;
+  }
 }
 
 .contact-info{
@@ -367,4 +377,43 @@ border-radius: 15px;
 }
 .mentor-section .button a:hover{
   background: #059305;
+}
+/* ----------feedback-section----------- */
+.feedback-section{
+  background-image: url('../images/common-bg-2.webp');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: left top;
+} 
+.feedback-section .owl-carousel .item{
+  text-align: center;
+}
+.feedback-section .owl-carousel .item .card{
+  padding: 20px 0px;
+  margin: 0px 20px;
+  min-height: 400px;
+  border:1px solid #00b300;
+  border-radius: 20px;
+  background-color: transparent;
+  text-align: center;
+}
+.owl-carousel .owl-nav span{
+  font-size: 70px;
+  font-weight: lighter !important;
+}
+.owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-nav .owl-next{
+  position: absolute;
+  top: 140px;
+
+}
+.owl-carousel .owl-nav .owl-prev{
+  left: -30px;
+}
+.owl-carousel .owl-nav .owl-next{
+  right: -30px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #86979100;
+  color: #000000;
+  text-decoration: none;
 }
