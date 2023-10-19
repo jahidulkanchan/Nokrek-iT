@@ -8,6 +8,27 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
 }
+/* ----top-scroller--------- */
+#top-scroller{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 45px;
+  color: #ffffff;
+  border-radius: 7px;
+  background-color: #f62626;
+  transition: .3s ease;
+  cursor: pointer;
+  z-index: 9999;
+}
+#top-scroller:hover{
+  background-color: #019b0c;
+}
 ul {
   margin: 0;
   padding: 0;
