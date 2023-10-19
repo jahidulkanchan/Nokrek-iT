@@ -409,6 +409,10 @@ border-radius: 15px;
 .owl-carousel .owl-nav .owl-prev{
   left: -30px;
 }
+.owl-carousel .owl-nav .owl-prev span:focus-visible,.owl-carousel .owl-nav .owl-prev:focus-visible,
+.owl-carousel .owl-nav .owl-next:focus-visible,.owl-carousel .owl-nav .owl-next span:focus-visible{
+ outline: none;
+}
 .owl-carousel .owl-nav .owl-next{
   right: -30px;
 }
