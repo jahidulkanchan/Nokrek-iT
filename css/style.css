@@ -203,7 +203,7 @@ header .bar div::after{
   background-color: #FAF0F0;
   min-height: 600px;
 }
-iframe{
+.banner-section iframe{
   width: 100%;
   min-height: 300px;
   border-radius: 20px;
@@ -333,6 +333,11 @@ iframe{
 .about-ceo-section .left-text p{
   font-weight: 600;
   font-size: 18px;
+}
+.about-ceo-section img{
+  width: 100%;
+  border-radius: 10px;
+  border: 7px solid #ffdfaf;
 }
 /* -------mentor-section------- */
 .mentor-section{
