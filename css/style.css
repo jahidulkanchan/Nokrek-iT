@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,7 +22,7 @@ body {
   height: 45px;
   color: #ffffff;
   border-radius: 7px;
-  background-color: #f62626;
+  background-color: #ff0505;
   transition: .3s ease;
   cursor: pointer;
   z-index: 9999;

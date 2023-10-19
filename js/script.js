@@ -1,3 +1,11 @@
+
+
+// Top-scroller
+let topScroller = document.getElementById('top-scroller');
+topScroller.addEventListener('click', function(){
+  window.scrollTo(0, 0);
+})
+
 // Scroll-bar
 let headerNav = document.getElementById("main-header");
 
@@ -20,3 +28,4 @@ toogleBar.addEventListener("click", () => {
   toogleBar.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
