@@ -97,6 +97,9 @@ button{
   body .Course-section .card{
     margin: 10px 20px;
   }
+  body .header-menu .logo img{
+    width: 90px;
+  }
 }
 @media (max-width:576px) {
   body .contact-info{
