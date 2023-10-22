@@ -100,6 +100,9 @@ button{
   body .header-menu .logo img{
     width: 90px;
   }
+  body .feedback-section .owl-carousel .item .card{
+    min-height: 450px;
+  }
 }
 @media (max-width:576px) {
   body .contact-info{
@@ -391,17 +394,29 @@ border-radius: 15px;
  background-repeat: no-repeat;
  background-position: left top;
 } 
-.feedback-section .owl-carousel .item{
-  text-align: center;
-}
 .feedback-section .owl-carousel .item .card{
   padding: 20px 0px;
-  margin: 0px 20px;
-  min-height: 400px;
+  margin: 0px 10px;
+  min-height: 600px;
   border:1px solid #00b300;
   border-radius: 20px;
   background-color: transparent;
-  text-align: center;
+}
+.feedback-section .owl-carousel .item .card h3{
+  color: #25ba00;
+  font-weight: bold;
+}
+.feedback-section .owl-carousel .item .card h2{
+  color: #ff3030;
+  font-weight: 700;
+  font-size: 45px;
+}
+.feedback-section .owl-carousel .item .card p{
+  font-weight: 600;
+  line-height: 30px;
+}
+.feedback-section .owl-carousel .item .card .button a{
+  background: #ff0101;
 }
 .owl-carousel .owl-nav span{
   font-size: 70px;
