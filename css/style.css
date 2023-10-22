@@ -417,6 +417,11 @@ border-radius: 15px;
 }
 .feedback-section .owl-carousel .item .card .button a{
   background: #ff0101;
+  border-radius: 15px;
+}
+.feedback-section .owl-carousel .item .card .button a:hover{
+  background: #009700;
+  transform: translateY(-8px);
 }
 .owl-carousel .owl-nav span{
   font-size: 70px;
@@ -441,4 +446,24 @@ border-radius: 15px;
   background: #86979100;
   color: #000000;
   text-decoration: none;
+}
+/* --------success-section--------- */
+.success-section{
+  background-color: #faf0f0;
+}
+.success-section .card{
+  min-height: 250px;
+  border-radius: 20px;
+  border: 5px solid #fffac9;
+}
+.success-section .card iframe{
+  border-radius: 20px;
+}
+.success-section .button a{
+  background: red;
+  border-radius: 15px;
+}
+.success-section .button a:hover{
+  background: #017509;
+  transform: translateY(-8px);
 }
