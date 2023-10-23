@@ -5,6 +5,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+:root{
+  --btn-bg-red: #ff0000;
+  --btn-bg-hover: #008000;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
@@ -22,13 +26,13 @@ body {
   height: 45px;
   color: #ffffff;
   border-radius: 7px;
-  background-color: #ff0505;
+  background-color: var(--btn-bg-red);
   transition: .3s ease;
   cursor: pointer;
   z-index: 9999;
 }
 #top-scroller:hover{
-  background-color: #019b0c;
+  background-color: var(--btn-bg-hover);
 }
 ul {
   margin: 0;
@@ -171,7 +175,7 @@ nav ul li a{
   transition: .7s ease;
 }
 nav ul li:hover a{
-  background-color: #ff3b3b;
+  background-color: var(--btn-bg-red);
   color: #ffffff;
 }
 nav ul li .regiter-btn{
@@ -235,13 +239,13 @@ header .bar div::after{
 }
 @keyframes colorChange {
   0%{
-    color: #FF1E1E;
+    color: var(--btn-bg-red);
   }
   80%{
-    color: #00b300;
+    color: var(--btn-bg-hover);
   }
   100%{
-    color: #FF1E1E;
+    color: var(--btn-bg-red);
   }
 }
 .banner-section .left-text h1{
@@ -276,7 +280,7 @@ header .bar div::after{
 }
 .Course-section .button a{
   font-weight: 600;
-  background: #fd1717;
+  background: var(--btn-bg-red);
   color: #ffffff;
   display: inline-block;
   padding: 6px 15px 8px 15px;
@@ -285,7 +289,7 @@ header .bar div::after{
 .Course-section .button a:hover{
   transform: translateY(-10px);
   background-color: #FAF0F0;
-  color: #ff2121;
+  color: var(--btn-bg-red);
 }
 .Course-section .animate1{
   animation: animate1 3s 0s infinite linear both;
@@ -347,7 +351,7 @@ header .bar div::after{
   min-height: 600px;
 }
 .about-ceo-section .left-text h2{
-  color: #FF1E1E;
+  color: var(--btn-bg-red);
 }
 .about-ceo-section .left-text p{
   font-weight: 600;
@@ -376,16 +380,16 @@ header .bar div::after{
 .mentor-section .card .button a:hover{
   width: 100%;
   transform: translateY(-8px);
-  background: #f62626;
+  background: var(--btn-bg-red);
 }
 .mentor-section .button a{
-background: #fd1313;
+background: var(--btn-bg-red);
 color: #ffffff;
 font-weight: 600;
 border-radius: 15px;
 }
 .mentor-section .button a:hover{
-  background: #059305;
+  background: var(--btn-bg-hover);
 }
 /* ----------feedback-section----------- */
 .feedback-section{
@@ -398,16 +402,16 @@ border-radius: 15px;
   padding: 20px 0px;
   margin: 0px 10px;
   min-height: 600px;
-  border:1px solid #00b300;
+  border:1px solid --btn-bg-hover;
   border-radius: 20px;
   background-color: transparent;
 }
 .feedback-section .owl-carousel .item .card h3{
-  color: #25ba00;
+  color: var(--btn-bg-hover);
   font-weight: bold;
 }
 .feedback-section .owl-carousel .item .card h2{
-  color: #ff3030;
+  color: var(--btn-bg-red);
   font-weight: 700;
   font-size: 45px;
 }
@@ -416,7 +420,7 @@ border-radius: 15px;
   line-height: 30px;
 }
 .feedback-section .owl-carousel .item .card .button a{
-  background: #ff0101;
+  background: var(--btn-bg-red);
   border-radius: 15px;
 }
 .feedback-section .owl-carousel .item .card .button a:hover{
@@ -425,11 +429,11 @@ border-radius: 15px;
 }
 .owl-carousel .owl-nav span{
   font-size: 70px;
-  font-weight: lighter !important;
+  font-weight: lighter;
 }
 .owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-nav .owl-next{
   position: absolute;
-  top: 140px;
+  top: 40%;
 
 }
 .owl-carousel .owl-nav .owl-prev{
@@ -460,7 +464,7 @@ border-radius: 15px;
   border-radius: 20px;
 }
 .success-section .button a{
-  background: red;
+  background: var(--btn-bg-red);
   border-radius: 15px;
 }
 .success-section .button a:hover{
