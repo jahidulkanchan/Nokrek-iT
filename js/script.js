@@ -4,20 +4,29 @@ topScroller.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-// Scroll-bar
-let headerNav = document.getElementById("main-header");
+// // Scroll-bar
+// let headerNav = document.getElementById("main-header");
 
-let prevPosition = window.scrollY;
-window.addEventListener("scroll", () => {
-  headerNav.classList.toggle("active", window.scrollY > 45);
+// let prevPosition = window.scrollY;
+// window.addEventListener("scroll", () => {
+//   headerNav.classList.toggle("active", window.scrollY > 45);
+//   let newPosition = window.scrollY;
+//   if (newPosition > prevPosition) {
+//     headerNav.classList.add("hide");
+//   } 
+//   else {
+//     headerNav.classList.remove("hide");
+//   }
+//   prevPosition = newPosition;
+// });
+
+let headerNav=document.getElementById("main-header");
+prevPosition = window.scrollY;
+window.addEventListener("scroll",()=>{
+  headerNav.classList.toggle("active", 45 < window.scrollY);
   let newPosition = window.scrollY;
-  if (newPosition > prevPosition) {
-    headerNav.classList.add("hide");
-  } 
-  else {
-    headerNav.classList.remove("hide");
-  }
-  prevPosition = newPosition;
+  newPosition > prevPosition? headerNav.classList.add("hide"):headerNav.classList.remove("hide");
+  prevPosition=newPosition;
 });
 
 // Toogle-bar
