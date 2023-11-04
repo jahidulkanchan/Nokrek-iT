@@ -555,3 +555,18 @@ color: white;
 .social-menu nav ul li{
   margin: 0px 5px;
 }
+footer .copy-right{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  background-color: #20202079;
+}
+footer .copy-right p{
+  font-weight: 600;
+  margin-top: 10px;
+}
+footer .copy-right p a{
+  color: #009700;
+}
