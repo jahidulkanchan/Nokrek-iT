@@ -561,7 +561,27 @@ background-color: #faf0f0;
 .reviews-section p{
   font-weight: 600;
 }
+
+/* ---------achievements-section----------- */
+.achievements-section{
+  background-color: #faf0f0;
+}
+.achievements-section .item{
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.achievements-section .item img{
+  display: inline-block;
+  max-width: 60%;
+}
+.achievements-section .owl-carousel .owl-nav .owl-prev,.achievements-section .owl-carousel .owl-nav .owl-next{
+  position: absolute;
+  top: 40%;
+}
+
 footer{
+  padding: 0px 20px;
   min-height: 700px;
   background: url(../images/footer-bg.jpg) fixed;
   background-color: #00000070;

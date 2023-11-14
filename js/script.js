@@ -61,6 +61,8 @@ $('.owl-carousel-2').owlCarousel({
   loop:true,
   margin:10,
   nav:true,
+  smartSpeed: 1000,
+  autoplay: true,
   dots: false,
   responsive:{
       0:{
@@ -73,5 +75,25 @@ $('.owl-carousel-2').owlCarousel({
           items:2
       }
   }
+});
+$('.owl-carousel-3').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  smartSpeed: 1000,
+  dots: false,
+  autoplay: true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
 })
+
 
