@@ -38,7 +38,7 @@ toogleBar.addEventListener("click", () => {
 });
 
 // Owl carousel
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel-1").owlCarousel({
   loop: true,
   margin: 10,
   dots: false,
@@ -46,13 +46,32 @@ $(".owl-carousel").owlCarousel({
   autoplay: true,
   responsive: {
     0: {
-      items: 1,
+      items: 1
     },
     800: {
-      items: 2,
+      items: 2
     },
     1000: {
-      items: 3,
+      items: 3
     },
   },
 });
+
+$('.owl-carousel-2').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:2
+      }
+  }
+})
+
