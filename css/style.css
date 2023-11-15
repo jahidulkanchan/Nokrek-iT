@@ -108,6 +108,9 @@ button{
   body .feedback-section .owl-carousel .item .card{
     min-height: 650px;
   }
+  body .achievements-section .item img{
+    max-width: 80%;
+  }
 }
 @media (max-width:576px) {
   body .contact-info{
@@ -118,6 +121,17 @@ button{
   }
   body .feedback-section .owl-carousel .owl-nav .owl-next,body .reviews-section .owl-carousel .owl-nav .owl-next{
     right: -15px;
+  }
+  body .reviews-section .owl-carousel .owl-nav .owl-prev, body .reviews-section .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 10%;
+  }
+  body .achievements-section .owl-carousel .owl-nav .owl-prev, body .achievements-section .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 30%;
+  }
+  body .achievements-section .item img{
+    max-width: 90%;
   }
 }
 
@@ -531,7 +545,10 @@ background-color: #faf0f0;
   align-items: center;
 }
 .reviews-section .item{
-  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
   min-height: 150px;
 }
 .reviews-section .owl-carousel{
@@ -573,13 +590,13 @@ background-color: #faf0f0;
 }
 .achievements-section .item img{
   display: inline-block;
-  max-width: 60%;
+  max-width: 80%;
+  max-height:600px;
 }
 .achievements-section .owl-carousel .owl-nav .owl-prev,.achievements-section .owl-carousel .owl-nav .owl-next{
   position: absolute;
   top: 40%;
 }
-
 footer{
   padding: 0px 20px;
   min-height: 700px;
