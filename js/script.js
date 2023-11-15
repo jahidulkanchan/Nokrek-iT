@@ -3,23 +3,6 @@ let topScroller = document.getElementById("top-scroller");
 topScroller.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
-
-// // Scroll-bar
-// let headerNav = document.getElementById("main-header");
-
-// let prevPosition = window.scrollY;
-// window.addEventListener("scroll", () => {
-//   headerNav.classList.toggle("active", window.scrollY > 45);
-//   let newPosition = window.scrollY;
-//   if (newPosition > prevPosition) {
-//     headerNav.classList.add("hide");
-//   } 
-//   else {
-//     headerNav.classList.remove("hide");
-//   }
-//   prevPosition = newPosition;
-// });
-
 let headerNav=document.getElementById("main-header");
 prevPosition = window.scrollY;
 window.addEventListener("scroll",()=>{
